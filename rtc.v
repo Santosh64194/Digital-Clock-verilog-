@@ -20,7 +20,7 @@ module rtc (
             alarm_out <= 0;
         end
         else begin
-            if (clk_count == 8) begin 
+            if (clk_count == 9) begin #here instead of the value 9 necessary clk freq should be given for eg " 100 Mega -1 " for basys 3
                 clk_count <= 0;
                 if (sec == 59) begin
                     sec <= 0;
